@@ -1,0 +1,43 @@
+server:
+  port: 9191
+debug: true
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  mail:
+    host: smtp.gmail.com
+    password: DGQPK2174E
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: sanjeetk757@gmail.com
+ 
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration
+      - org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration
+      - org.springframework.boot.autoconfigure.security.FallbackWebSecurityAutoConfiguration
+      
+    app:
+       messages:
+        pwsRecoverSucc: Password Sent to your Email
+        pwsRecoverFail: Invalid Email ID 
+        accRegSucc: Registration Almost Done,Check your mail to Unlock Account
+        accRegFali: User Registration Failed
+        userAlreadyReg: User Already register with given email Id
+        lockedAccount: Account Is Locked
+        invalidCerdentials: Cerdentials are Invalid
+        accUnlockSucc: Your Account Unlocked Successfully...
+        invTempPwd: Invalid Temorary Password
+        mailSubMsg: Password Recovery
+        regSuccMsg: Registration Successfull...
+      
+

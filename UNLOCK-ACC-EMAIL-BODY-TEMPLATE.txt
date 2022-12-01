@@ -1,0 +1,16 @@
+Hi {FNAME},{LNAME} :
+</br>
+
+		Your Account Registration is almost Completed,
+		Please use below details to unlock your account.
+		<br/>
+	
+	Temporary Password :{TEMP-PWD} <br/>
+		
+	<a href='http://localhost:9090/unlockAcc?emails={EMAIL}'>
+	Click hear to unlock your account </a>
+	<br/>	
+
+
+	Thanks & Regard,<br/>
+	Ashok IT.<br/>
